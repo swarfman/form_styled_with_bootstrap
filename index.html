@@ -12,19 +12,12 @@
   </head>
 <body>
   <div class="container-fluid">
-    <div class="p-0 card">
+    <div class="p-0 card" id="card">
       <div class="card-body">
         <div class="card-title bg-light p-3 mb-0">
             <h3>Payment Form Example</h3>
         </div>
-        <form class="needs-validation pt-3 p-1 border" novalidate>
-          <div class="row">
-            <div class="col-12">
-              <div class="alert alert-danger" role="alert">
-                Some fields are missing.
-              </div>
-            </div>
-          </div>
+        <form class="needs-validation pt-3 p-1 border" id="form1" novalidate>
           <div class="form-row p-3">
             <div class="col-md-6 mb-1">
               <label for="validationCustom01">Credit Card Number</label>
@@ -42,9 +35,9 @@
             </div>
             <div class="col-md-3 mb-1">
               <i class="fas fa-dollar-sign"></i>
-              <label for="validationCustomUsername">Amount</label>
+              <label for="validationCustomAmount">Amount</label>
               <div class="input-group">
-                <input type="text" class="form-control" id="validationCustomUsername" placeholder="$" value="$" aria-describedby="inputGroupPrepend" required>
+                <input type="number" class="form-control" id="validationCustomAmount" placeholder="" value="" aria-describedby="inputGroupPrepend" required>
                 <div class="invalid-feedback">
                   Please choose a username.
                 </div>
@@ -53,15 +46,15 @@
           </div>
         <div class="form-row p-3">
           <div class="col-md-6 mb-1">
-            <label for="validationCustom01">First name</label>
-            <input type="text" class="form-control" id="validationCustom01" placeholder="First name" required>
+            <label for="validationCustom03">First name</label>
+            <input type="text" class="form-control" id="validationCustom03" placeholder="First name" required>
             <div class="valid-feedback">
               Looks good!
             </div>
           </div>
         <div class="col-md-6">
-          <label for="validationCustom02">Last name</label>
-          <input type="text" class="form-control" id="validationCustom02" placeholder="Last name" required>
+          <label for="validationCustom04">Last name</label>
+          <input type="text" class="form-control" id="validationCustom04" placeholder="Last name" required>
           <div class="valid-feedback">
             Looks good!
           </div>
@@ -69,24 +62,22 @@
       </div>
       <div class="form-row p-3">
         <div class="col-md-6 mb-3">
-          <label for="validationCustom03">City</label>
-          <input type="text" class="form-control" id="validationCustom03" placeholder="City" required>
+          <label for="validationCustom05">City</label>
+          <input type="text" class="form-control" id="validationCustom05" placeholder="City" required>
           <div class="invalid-feedback">
             Please provide a valid city.
           </div>
         </div>
         <div class="col-md-3 mb-3">
-          <label for="validationCustom04">State</label>
-          <select class="form-control" placeholder="State">
-            <option>Pick a State</option>
-          </select>
+          <label for="validationCustom07">State</label>
+          <input type="text" class="form-control" id="validationCustom07" placeholder="State" required>
           <div class="invalid-feedback">
             Please provide a valid state.
           </div>
         </div>
         <div class="col-md-3 mb-3">
-          <label for="validationCustom05">Postal Code</label>
-          <input type="text" class="form-control" id="validationCustom05" placeholder="Zip" required>
+          <label for="validationCustom06">Postal Code</label>
+          <input type="text" class="form-control" id="validationCustom06" placeholder="Zip" required>
           <div class="invalid-feedback">
             Please provide a valid zip code.
           </div>
@@ -142,5 +133,6 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js" integrity="sha384-7aThvCh9TypR7fIc2HV4O/nFMVCBwyIUKL8XCtKE+8xgCgl/PQGuFsvShjr74PBp" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
   </body>
 </html>
